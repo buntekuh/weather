@@ -1,0 +1,29 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Queries the Open Weather Map API to display the weather anywhere in the world",
+  "dependencies": {},
+  "devDependencies": {
+    "angular-mocks": "^1.6.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.0",
+    "gulp-sass": "^3.0.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "gulp-webserver": "^0.9.1",
+    "jasmine": "^2.5.2",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-spec-reporter": "^0.0.26",
+    "ng-midway-tester": "^2.0.5"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "Bernd Eickhoff <beickhoff01@gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,18 @@
+<div class="col-lg-6">
+  <div ng-hide="notRetrieved()">
+      {{ temperature() }} &#176;C
+      <img ng-src="http://openweathermap.org/img/w/{{icon()}}.png"/>
+      {{ description() }}
+  </div>
+
+  <div ng-switch on="error()">
+    <div ng-switch-when="cityNotFound" class="alert alert-danger">
+      The city you entered could not be found.<br/>
+      Maybe you have misspelt it?
+    </div>
+    <div ng-switch-when="wrongCity" class="alert alert-warning">
+      The returned weather data is for {{ city() }}.<br/>
+      Maybe you have misspelt the name of the city?
+    </div>
+  </div>
+</div>

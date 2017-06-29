@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  
+  <script src="js/lib.js"></script>
+  <script src="js/app.js"></script>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <style>
+ 
+  </style>
+</head>
+
+<body ng-app="weatherApp" ng-controller="appController" class="container">
+    <nav>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#by-city" aria-controls="by-city" role="tab" data-toggle="tab">By City</a></li>
+        <li role="presentation"><a href="#by-location" aria-controls="by-location" role="tab" data-toggle="tab">By Location</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="by-city">
+          <by-city class="row"></by-city>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="by-location">
+            Not yet implemented
+        </div>
+      </div>
+    </nav>
+    <show-weather class="row"></show-weather>
+</body>
