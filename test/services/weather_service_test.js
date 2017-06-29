@@ -58,7 +58,7 @@ describe('weatherService', function() {
         expect(false).toBe(true)
       },
       function(data) {
-        expect(data.error).toBe('Error: Not found city');
+        expect(data.error).toBe('city not found');
         expect(data.notRetrieved).toBe(true);
         done()
       }
